@@ -70,4 +70,13 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+//    implementation ("androidx.compose.ui:ui:1.4.3")// UI components
+//    implementation ("androidx.compose.material3:material3:1.1.0") // Material Design 3 components
+//    implementation ("androidx.compose.foundation:foundation:1.4.3") // Foundation components
+//    implementation ("androidx.compose.foundation:foundation-pager:1.4.3") // HorizontalPager
+//
+//    // Kotlin Coroutines for handling asynchronous tasks
+//    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
+//    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
 }

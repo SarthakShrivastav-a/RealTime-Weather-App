@@ -3,6 +3,7 @@ package com.example.weatherrealtime
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : ComponentActivity() {
@@ -12,7 +13,9 @@ class MainActivity : ComponentActivity() {
         val weatherViewModel = ViewModelProvider(this)[WeatherViewModel::class.java]
 
         setContent {
-            weatherScreen(weatherViewModel)
+            Column {
+                weatherScreen(weatherViewModel)
+            }
         }
     }
 }
