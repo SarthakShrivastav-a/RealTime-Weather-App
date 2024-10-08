@@ -198,13 +198,13 @@ fun FirstPageContent(data: WeatherModel) {
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            InfoItem(label = "Rain Prob", value = "${data.current.precip_in} in", imageUrl = "https://icons.veryicon.com/png/128/business/meow-1/rain-26.png")
-            InfoItem(label = "Heat Index", value = "${data.current.heatindex_c}°C", imageUrl = "https://icons.veryicon.com/png/o/internet--web/common-web-icons/w_-heat.png")
-        }
+//        Row(
+//            modifier = Modifier.fillMaxWidth(),
+//            horizontalArrangement = Arrangement.SpaceBetween
+//        ) {
+//            InfoItem(label = "Rain Prob", value = "${data.current.precip_in} in", imageUrl = "https://icons.veryicon.com/png/128/business/meow-1/rain-26.png")
+//            InfoItem(label = "Heat Index", value = "${data.current.heatindex_c}°C", imageUrl = "https://icons.veryicon.com/png/o/internet--web/common-web-icons/w_-heat.png")
+//        }
     }
 }
 
@@ -244,14 +244,14 @@ fun SecondPageContent(data: WeatherModel) {
 
         Spacer(modifier=Modifier.height(12.dp))
 
-        Row(
-            modifier=Modifier.fillMaxWidth(),
-            horizontalArrangement=Arrangement.SpaceEvenly
-        ) {
-            InfoItem(label="PM2.5", value="${data.current.air_quality.pm2_5}", imageUrl= "https://icons.veryicon.com/png/o/application/app-icons/pm25.png")
-            Spacer(modifier = Modifier.size(12.dp))
-            InfoItem(label="SO2", value="${data.current.air_quality.so2}", imageUrl= "https://cdn3.iconfinder.com/data/icons/allergy-12/60/sulfurdioxide__allergy__dust__chemical__medical-512.png")
-        }
+//        Row(
+//            modifier=Modifier.fillMaxWidth(),
+//            horizontalArrangement=Arrangement.SpaceEvenly
+//        ) {
+//            InfoItem(label="PM2.5", value="${data.current.air_quality.pm2_5}", imageUrl= "https://icons.veryicon.com/png/o/application/app-icons/pm25.png")
+//            Spacer(modifier = Modifier.size(12.dp))
+//            InfoItem(label="SO2", value="${data.current.air_quality.so2}", imageUrl= "https://cdn3.iconfinder.com/data/icons/allergy-12/60/sulfurdioxide__allergy__dust__chemical__medical-512.png")
+//        }
     }
 }
 
